@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+      background-color: rgb(155, 155, 155);
+    }
+    .log {
+      margin-top: 20px;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgb(155, 155, 155);
+      padding: 15px;
+      border-radius: 8px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      background-color: rgb(155, 155, 155);
+    }
+    .hint, .result, .guesses-left {
+      margin: 10px 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+      padding: 5px;
+      background: #f0f0f0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wordle Game</h1>
+  <p>An <b>x</b> means the letter isn't in the word, a <b>*</b> means the letter is in the correct spot, and a <b>^</b> means the letter is in the word but in the wrong spot.</p>
+  <p>If you need a hint, press the "Hint" button. If you give up, press "Give Up".</p>
+  
+  <div>
+    <input type="text" id="wordInput" maxlength="10" placeholder="Type a word" />
+    <button id="submitWord">Submit</button>
+    <button id="hint">Hint</button>
+    <button id="giveUp">Give Up</button>
+  </div>
+
+  <div class="result"></div>
+  <div class="guesses-left"></div>
+  <div class="score"><p id="score"></p></div>
+  <div class="log" style="background-color: rgb(155, 155, 155);">
+    <h3>Game Log</h3>
+    <ul id="guessLog" style="background-color: rgb(155, 155, 155);">
+      <li style="background-color: rgb(155, 155, 155);"><b>Hints:</b></li>
+      <li id="hintLog" style="background-color: rgb(155, 155, 155);"></li>
+      <li style="background-color: rgb(155, 155, 155);"><b>Guesses:</b></li>
+      <li id="guessHistory" style="background-color: rgb(155, 155, 155);"></li>
+    </ul>
+  </div>
+
+  <script src="{{ url_for('static', filename='wordle.js') }}">
+    // <!-- <script > -->
+
+
+  </script>
+</body>
+</html>

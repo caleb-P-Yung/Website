@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: grey;;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.item-text-input {
+  border: none;
+  background: transparent;
+  width: fit-content;
+}
+.add-btn{
+  background-color: grey;
+    border-radius: 5px;
+  border-color: #eee;
+}
+li {
+  background: #eee;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: large;
+  text-align: left;
+}
+.delete-btn {
+  float: right;
+  margin-right: 10px;
+  background-color: #eee;
+  color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-color: #eee;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+  
+}

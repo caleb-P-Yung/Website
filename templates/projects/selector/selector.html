@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='selector.css') }}">
+</head>
+<body>
+  <div class="topbar">
+  <p class="d" id="d"></p> 
+  <button class="c" id="lo">Log Out</button>
+</div>
+<hr>
+  <img class="b" id="img" style="width:200px; height:auto;" alt="hi">
+  <button id="ta" class="b">Go to Ta Gueule Page</button>
+  <button id="wm" class="b">Go to wordmaker</button>
+  <button id="fl" class="b">Go to Flappy Bird</button>
+  <button id="ai" class="b">Go to AI</button>
+  <button id="ch" class="b">Go to Checklist</button>
+   <!-- {{ url_for('static', filename='belzebuth.JPG') }} {{ url_for('static', filename='iceman.PNG') }} -->
+
+<script src="{{ url_for('static', filename='selector.js') }}"></script>
+
+  </style>
+</body>
+</html>

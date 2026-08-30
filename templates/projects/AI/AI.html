@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='AI.css') }}">
+</head>
+<body>
+  <h1>AI Chat</h1>
+<div class="o" id="chatContainer" class="ai-message" style="border:1px solid #ccc; padding:1px; width:75%; height:750px; overflow-y:auto;"></div>
+<textarea class="b" class="user-message" id="userMessage" placeholder="Type a message and hit Enter..." rows="2" style="width:60%; "></textarea>
+
+
+  <script src="{{ url_for('static', filename='AI.js') }}">
+    
+  </script>
+</body>
+</html>

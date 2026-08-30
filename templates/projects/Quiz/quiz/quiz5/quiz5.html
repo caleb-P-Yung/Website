@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .quiz-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        input[type="radio"] {
+            cursor: pointer; /* Set pointer cursor for radio buttons */
+        }
+        button {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>French Quiz</h2>
+        <div id="quiz"></div>
+        <button id="submit-btn" onclick="checkAnswers()">Submit</button>
+        <p id="result"></p>
+        <button id = "back" class="back" onclick="window.close(); window.open('http://127.0.0.1:5500/Java%20script%20and%20html%20projects/quiz_selector.html', '_blank')">See home screen</button>
+    </div>
+    <script src="quiz5.js"></script>
+</body>
+</html>

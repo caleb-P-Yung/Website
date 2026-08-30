@@ -1,0 +1,21 @@
+
+.o{
+    background-color: grey;
+    font-size: x-large;
+    outline: 1px solid white;
+    padding: 1px;
+    margin: 10px auto; 
+    width: fit-content;
+    display: inline-block;
+    white-space: pre-line; 
+    }
+  .b{
+    background-color: grey;
+    font-size: x-large;
+    display: block;
+    margin: 0 auto;
+  }
+  body{
+    text-align: center;
+    background-color: grey;
+  }

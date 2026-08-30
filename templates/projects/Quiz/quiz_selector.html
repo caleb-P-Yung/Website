@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiz Selector</title>
+</head>
+<body>
+    <style>
+        .Restarts{
+    padding: 1%;
+    cursor: unset;
+    text-align: center;
+}
+.Restart{
+    cursor: pointer;
+    text-align: center;
+}
+.b{
+    cursor: unset;
+    pointer-events: none;
+}
+.score{
+    text-align: center;
+    cursor:text;
+}
+body{
+    background-color: rgb(180, 180, 180);
+}
+.contain {
+    width: 50%;
+    margin: 0 auto;
+    width: 400px;
+}
+
+button {
+background-color: rgb(179, 179, 179);
+border-color: rgb(111, 111, 111);
+cursor: pointer;
+height:30px;
+width:165px;
+font-size: large;
+}
+.buttons{
+    text-align: center;
+}
+p{
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
+}
+    </style>
+    <p>The Quiz Selector</p>
+    <div class="contain"> 
+        <div class="buttons">
+            <button id="q1" onclick="window.open('http://127.0.0.1:5500/Java%20script%20and%20html%20projects/quiz/quiz1/quiz1.html', '_blank');">Math quiz</button>
+            <button id="q2" onclick="window.open('http://127.0.0.1:5500/Java%20script%20and%20html%20projects/quiz/quiz2/quiz2.html', '_blank');">E.L.A. quiz</button>
+            <button id="q3" onclick="window.open('http://127.0.0.1:5500/Java%20script%20and%20html%20projects/quiz/quiz3/quiz3.html', '_blank');">Science quiz</button>
+            <button id="q4" onclick="window.open('http://127.0.0.1:5500/Java%20script%20and%20html%20projects/quiz/quiz4/quiz4.html', '_blank');">History quiz</button>
+            <button id="q5" onclick="window.open('http://127.0.0.1:5500/Java%20script%20and%20html%20projects/quiz/quiz5/quiz5.html','_blank');">French quiz</button>
+            <button id="q6" onclick="window.open('http://127.0.0.1:5500/Java%20script%20and%20html%20projects/quiz/quiz6/quiz6.html', '_blank');">Topic Quiz</button>
+        <button class="b"id="q7">blank quiz</button>
+        <button class="b" id="q8">blank quiz</button>
+        <button class="b" id="q9">blank quiz</button>
+        <button class="b" id="q10">blank quiz</button> 
+        </div>
+    </div>
+    <div class="Restarts">
+        <button class="Restart" onclick="localStorage.clear(); location.reload(); ">Restart</button>
+    </div>
+    <p id="valueoutput", class="score"></p1>
+    <script src="quiz_selector.js"></script>
+</body>
+</html>

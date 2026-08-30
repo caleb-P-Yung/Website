@@ -1,0 +1,62 @@
+
+.o{
+    background-color: rgb(83, 83, 83);
+    font-size: x-large;
+    outline: 1px solid white;
+    padding: 1px;
+    margin: 10px auto; 
+    width: fit-content;
+    display: inline-block;
+    white-space: pre-line; 
+    }
+  .b{
+    background-color: rgb(83,83, 83);
+    display: block;
+    margin: 0 auto;
+  }
+/* AI messages (white bubble, left side, with tail) */
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* default AI messages on left */
+}
+
+.message {
+  margin: 6px 10px;
+  padding: 10px 14px;
+  border-radius: 18px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block; /* shrink to fit */
+}
+
+/* User messages */
+.user-message {
+  font-size: medium;
+  background-color: #e0e0e0;
+  align-self: flex-end; /* push to right */
+  border-bottom-right-radius: 4px;
+}
+
+/* AI messages */
+.ai-message {
+  font-size: medium;
+  text-align: center;
+  background-color: rgb(83,83, 83);
+  border: 1px solid rgb(83,83, 83);
+  align-self: center;
+  border-bottom-left-radius: 4px;
+}
+  #userMessage::placeholder {
+    color: lightgray;
+    border-color: lightgray;
+  }
+  #userMessage {
+  resize: none;
+}
+  body{
+    text-align: center;
+    background-color: rgb(83, 83, 83);
+  }

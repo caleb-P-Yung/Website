@@ -1,0 +1,33 @@
+
+  .b{
+    background-color: grey;
+    font-size: x-large;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+.topbar {
+  display: flex;
+  justify-content: space-between; /* left + right */
+  align-items: center;
+  background-color: grey;
+  padding: 10px;
+}
+  .d{
+    background-color: grey;
+    font-size: x-large;
+    display: block;
+    margin: 0  ;
+    text-align: left;
+  
+  }
+  .c {
+    background-color: grey;
+    font-size: x-large;
+    text-align: right;
+  
+  }
+  body{
+   background-color: grey; 
+  }

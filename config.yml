@@ -1,0 +1,9 @@
+tunnel: YOUR_TUNNEL_ID
+credentials-file: /home/server/.cloudflared/YOUR_TUNNEL_ID.json
+
+ingress:
+  - hostname: yourdomain.com
+    service: http://127.0.0.1:8080
+  - hostname: www.yourdomain.com
+    service: http://127.0.0.1:8080
+  - service: http_status:404
